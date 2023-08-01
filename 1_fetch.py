@@ -13,3 +13,10 @@ print(soup.find_all("div")[1])
 
 for link in soup.find_all("a"):
     print("Link ---> " , link.get("href"))
+
+
+# Finding the text of the  tags 
+text_div = soup.find_all("div")
+
+for div in text_div:
+    print(div.get_text().strip())
